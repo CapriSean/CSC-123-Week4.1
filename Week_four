@@ -1,1 +1,30 @@
 
+package week_four;
+
+public class Room {
+
+	double len;
+	double wid;
+	
+	private static int count = 0;
+	
+	public Room (double newL, double newW) {
+		len = newL;
+		wid = newW;
+		count++;
+	}
+	
+	public static int getCount() {
+		return count;
+	}
+	
+	public String toString() {
+		String str = "Length = "+len+"/nWidth = "+wid;
+		return str;
+	
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}
