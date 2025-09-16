@@ -1,0 +1,33 @@
+package week_four;
+
+public class Room_Demo {
+	public static void main(String[] args) {
+		
+		Room den = new Room(8,6);
+		Room kitchen = new Room(10,8);
+		
+		System.out.println("Den information\n"+den);
+		System.out.println(den);
+		System.out.println("Kitchen information\n"+kitchen);
+		System.out.println(kitchen);
+		System.out.println("Number of rooms: ");
+		System.out.println(den.getCount());
+		System.out.println("Number of rooms: ");
+		System.out.println(kitchen.getCount());
+		
+		displayObj(den);
+		changeObj(den);
+		
+		System.out.println("***New Den***" + den);
+	}
+	public static void displayObj(Room r) {
+		System.out.println("Information about object.");
+		System.out.println("Length = "+r.len);
+		System.out.println("Width = "+r.wid);
+	}
+	public static void changeObj(Room r) {
+		r.len = 88;
+		r.wid = 66;
+	}
+	
+}
